@@ -17,8 +17,13 @@ main article {
   text-transform: capitalize;
 }
 
+#total {
+  float: right;
+}
+
 #checkout {
   float: right;
+  margin-right: -85px;
 }
 
 /* nav */

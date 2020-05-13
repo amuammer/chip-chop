@@ -5,5 +5,13 @@ document.getElementById("cartTitle").innerText = `${userName} cart!`;
 
 function changeTotal(input) {
    const row  = input.parentElement.parentElement.childNodes;
-    row[11].innerText = `$${parseInt(input.value, 10) * 99}`;
+   const price = row[7].innerText;
+   const priceInt = parseInt(price, 10);
+   const inputValue = parseInt(input.value, 10);
+   row[11].innerText = `$${inputValue * price}`;
+    
+   const totalElement = document.getElementById("total");
+   const total = totalElement.innerText.split(" ")[1];
+  totalElement.innerText = `Total ${(parseInt(total, 10) + priceInt )}`
+   
 }
