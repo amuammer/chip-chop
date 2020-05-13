@@ -1,4 +1,4 @@
-// const userName = prompt("Can you enter your name, please ?");
+const userName = prompt("Can you enter your name, please ?");
 
 document.getElementById("cartTitle").innerText = `${userName} cart!`;
 
