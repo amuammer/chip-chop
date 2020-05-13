@@ -2,25 +2,10 @@
 <html>
 
 <head>
-    <title>shopping cart</title>
-    <link  rel="stylesheet" href="css/styles.css" />
-    <style>
-         table, th, td {
-  border: 1px solid black;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-
-
-th, td {
-  border-bottom: 1px solid #ddd;
-}
-
-    </style>
+    <title>my cart</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -30,90 +15,82 @@ th, td {
                 <li>
                     <a href="https://blonddimgreygui--raghadanees.repl.co/">Home</a>
                 </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-    <center>
-    <h2>My Cart</h2>
-    <table>
-        <tr>
-            <th>
-                i
-            </th>
-            <th>
-                name
-            </th>
-            <th>
-                image
-            </th>
-            <th>
-                price
-            </th>
-            <th>
-                Quantity
-            </th>
-        </tr>
-        <tr>
-            <td>
-                1
-            </td>
-            <td>
-                book1
-            </td>
-            <td>
-                <img width="50px" height="50px" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-            </td>
-            <td>
-                $99
-            </td>
-            <td>
-                1
-            </td>
-        </tr>
-        <tr>
-            <td>
-                2
-            </td>
-            <td>
-                book2
-            </td>
-            <td>
-                <img width="50px" height="50px" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-            </td>
-            <td>
-                $99
-            </td>
-            <td>
-                1
-            </td>
-        </tr>
-        <tr>
-            <td>
-                3
-            </td>
-            <td>
-                book3
-            </td>
-            <td>
-                <img width="50px" height="50px" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-            </td>
-            <td>
-                $99
-            </td>
-            <td>
-                1
-            </td>
-        </tr>
-    </table>
-    <input type="button" value="checkout" />
-</center>
-</main>
-<footer>
-    <p>
-        &copy; Adnan 2020
-    </p>
-</footer>
+        <article>
+        <h2 id="cartTitle">My Cart</h2>
+        <table id="cart">
+            <thead class="thead-dark">
+                <th scope="col">
+                    i
+                </th>
+                <th scope="col">
+                    name
+                </th>
+                <th scope="col">
+                    image
+                </th>
+                <th scope="col">
+                    price
+                </th>
+                <th scope="col">
+                    Quantity
+                </th>
+            </thead>
+            <tr>
+                <td> 1 </td>
+                <td> book1 </td>
+                <td>
+                    <img 
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                </td>
+                <td> $99 </td>
+                <td> <input type="number" value="1" /> </td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td>  book2  </td>
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                </td>
+                <td> $99 </td>
+                <td> <input type="number" value="1" /> </td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td>  book3  </td>
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                </td>
+                <td> $99 </td>
+                <td> <input type="number" value="1" /> </td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td>  book4  </td>
+                <td>
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                </td>
+                <td> $99 </td>
+                <td> <input type="number" value="1" /> </td>
+            </tr>
+        </table>
+        <button id="checkout"  class="btn btn-success"> checkout </button>
+    </article>
+    </main>
+    <footer>
+        <p>
+            &copy; Adnan 2020
+        </p>
+    </footer>
 </body>
 
 </html>
