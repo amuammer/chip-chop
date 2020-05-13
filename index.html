@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+</head>
 
 <body>
     <header>
@@ -23,77 +23,83 @@
     </header>
     <main>
         <article>
-        <h2 id="cartTitle"></h2>
-        <table id="cart">
-            <thead class="thead-dark">
-                <th scope="col">
-                    i
-                </th>
-                <th scope="col">
-                    name
-                </th>
-                <th scope="col">
-                    image
-                </th>
-                <th scope="col">
-                    price
-                </th>
-                <th scope="col">
-                    Quantity
-                </th>
-                <th scope="col">
-                    Total
-                </th>
-            </thead>
-            <tr>
-                <td> 1 </td>
-                <td> book1 </td>
-                <td>
-                    <img
-                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-                </td>
-                <td> 100 </td>
-                <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
-                <td> $100 </td>
-            </tr>
-            <tr>
-                <td> 2 </td>
-                <td>  book2  </td>
-                <td>
-                    <img
-                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-                </td>
-                <td> 100 </td>
-                <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
-                <td> $100 </td>
-            </tr>
-            <tr>
-                <td> 3 </td>
-                <td>  book3  </td>
-                <td>
-                    <img
-                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-                </td>
-                <td> 100 </td>
-                <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
-                <td> $100 </td>
-            </tr>
-            <tr>
-                <td> 4 </td>
-                <td>  book4  </td>
-                <td>
-                    <img
-                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-                </td>
-                <td> 100 </td>
-                <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
-                <td> $100 </td>
-            </tr>
-        </table>
-        <h5 id="total">Total 400</h5>
-        <br />
-        <button id="checkout"  class="btn btn-success"> checkout </button>
-    </article>
+            <h2 id="cartTitle"></h2>
+            <table id="cart">
+                <thead class="thead-dark">
+                    <th scope="col">
+                        i
+                    </th>
+                    <th scope="col">
+                        name
+                    </th>
+                    <th scope="col">
+                        image
+                    </th>
+                    <th scope="col">
+                        price
+                    </th>
+                    <th scope="col">
+                        Quantity
+                    </th>
+                    <th scope="col">
+                        Total
+                    </th>
+                    <th scope="col">
+                        Delete
+                    </th>
+                </thead>
+                <tr>
+                    <td> 1 </td>
+                    <td> book1 </td>
+                    <td>
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                    </td>
+                    <td> 100 </td>
+                    <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
+                    <td> $100 </td>
+                    <td> <input type="button" value="Delete" class="btn btn-danger" onclick="deleteItem(this);" /> </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> book2 </td>
+                    <td>
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                    </td>
+                    <td> 100 </td>
+                    <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
+                    <td> $100 </td>
+                    <td> <input type="button" value="Delete" class="btn btn-danger" onclick="deleteItem(this);" /> </td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> book3 </td>
+                    <td>
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                    </td>
+                    <td> 100 </td>
+                    <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
+                    <td> $100 </td>
+                    <td> <input type="button" value="Delete" class="btn btn-danger" onclick="deleteItem(this);" /> </td>
+                </tr>
+                <tr>
+                    <td> 4 </td>
+                    <td> book4 </td>
+                    <td>
+                        <img
+                            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                    </td>
+                    <td> 100 </td>
+                    <td> <input type="number" value="1" onchange="changeTotal(this);" /> </td>
+                    <td> $100 </td>
+                    <td> <input type="button" value="Delete" class="btn btn-danger" onclick="deleteItem(this);" /> </td>
+                </tr>
+            </table>
+            <br />
+            <button id="checkout" class="btn btn-success"> checkout </button>
+        </article>
     </main>
     <footer>
         <p>
